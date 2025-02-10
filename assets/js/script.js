@@ -451,3 +451,41 @@ Version      : 1.0
 
 
 })(jQuery); // End jQuery
+
+$(document).ready(function() {
+    $('a[href*="#"]').on('click', function(e) {
+      // Prevenir el comportamiento por defecto
+      e.preventDefault();
+
+      // Almacenar el destino (anchor) del link
+      var target = $(this).attr('href');
+
+      // Comprobar que target es válido y no es sólo "#"
+      if(target && target !== '#') {
+        // Realizar el scroll animado
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 1000); // 1000 milisegundos = 1 segundo
+      }
+    });
+  });
+
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    simulateTouch: true,
+    grabCursor: true,
+  });

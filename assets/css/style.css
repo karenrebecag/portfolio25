@@ -48,6 +48,10 @@ Version      : 1.0
     --title-font: "Oswald", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -3522,4 +3526,24 @@ ul.blog_pagination li a:hover {
 
 .skill-category{
     color: black;
+}
+@font-face {
+    font-family: 'Blinka Script';
+    src: url('../fonts/Blinka\ Script.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logoScript {
+    font-family: 'Blinka Script', cursive;
+    color: #000;
+}
+
+.bezierIcon {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/icons/bezier.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
