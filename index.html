@@ -207,7 +207,7 @@
                   </div>
                   <div class="col-lg-3 pt-30">
                       <div class="hero-content wow fadeInUp delay-0-4s">
-                          <p>Hi, I’m Karen, a passionate UX Engineer dedicated to creating user-friendly digital experiences.</p>
+                          <p>Hi, I’m Karen, a passionate Software Engineer dedicated to creating innovative digital experiences.</p>
                           <a class="theme-btn" href="#contact">Get In Touch</a>
                       </div>
                   </div>
@@ -444,86 +444,10 @@
                 </a>
             </div>
         </div>
-
-        <!-- Nueva fila de tres imágenes -->
-        <div class="row g-4 portfolio-grid mt-20">
-            <!-- Portfolio Item 7 -->
-            <div class="col-md-4 col-xl-4 portfolio-item category-3">
-                <a href="assets/images/screens/cadence.png" class="work-popup">
-                    <div class="portfolio-box">
-                        <img src="assets/images/screens/cadence.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
-                        <span class="portfolio-category">Shopify Development</span>
-                        <div class="portfolio-caption">
-                            <h1>Cadence OTP</h1>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Portfolio Item 8 -->
-            <div class="col-md-4 col-xl-4 portfolio-item category-3">
-                <a href="assets/images/screens/everen.png" class="work-popup">
-                    <div class="portfolio-box">
-                        <img src="assets/images/screens/everen.png" alt="Project 8 - Branding" data-rjs="2" loading="lazy">
-                        <span class="portfolio-category">UI Design</span>
-                        <div class="portfolio-caption">
-                            <h1>Everen Energy</h1>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Portfolio Item 9 -->
-            <div class="col-md-4 col-xl-4 portfolio-item category-3">
-                <a href="assets/images/screens/goslings.png" class="work-popup">
-                    <div class="portfolio-box">
-                        <img src="assets/images/screens/goslings.png" alt="Project 9 - UI Design" data-rjs="2" loading="lazy">
-                        <span class="portfolio-category">UI Design</span>
-                        <div class="portfolio-caption">
-                            <h1>Goslings Rum Bermudas</h1>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <div class="mt-50" style="display: flex; justify-content: center; width: 100%;">
+            <a class="theme-btn" href="projects.html">View More</a>
         </div>
 
-        <!-- Segunda nueva fila de tres imágenes -->
-        <div class="row g-4 portfolio-grid mt-20">
-            <!-- Portfolio Item 10 -->
-            <div class="col-md-4 col-xl-4 portfolio-item category-3">
-                <a href="assets/images/screens/healthade.png" class="work-popup">
-                    <div class="portfolio-box">
-                        <img src="assets/images/screens/healthade.png" alt="Project 10 - App Development" data-rjs="2" loading="lazy">
-                        <span class="portfolio-category">Shopify Development</span>
-                        <div class="portfolio-caption">
-                            <h1>Health Ade</h1>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Portfolio Item 11 -->
-            <div class="col-md-4 col-xl-4 portfolio-item category-3">
-                <a href="assets/images/screens/pologrounds.png" class="work-popup">
-                    <div class="portfolio-box">
-                        <img src="assets/images/screens/pologrounds.png" alt="Project 11 - Graphic Design" data-rjs="2" loading="lazy">
-                        <span class="portfolio-category">Graphic Design</span>
-                        <div class="portfolio-caption">
-                            <h1>PoloGrounds</h1>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Portfolio Item 12 -->
-            <div class="col-md-4 col-xl-4 portfolio-item category-3">
-                <a href="assets/images/screens/spil.png" class="work-popup">
-                    <div class="portfolio-box">
-                        <img src="assets/images/screens/spil.png" alt="Project 12 - Animation" data-rjs="2" loading="lazy">
-                        <span class="portfolio-category">UI Design</span>
-                        <div class="portfolio-caption">
-                            <h1>Spil Creative</h1>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
     </div>
 </div>
       <!-- END PORTFOLIO DESIGN AREA -->
@@ -1021,9 +945,34 @@
       </footer>
       <!-- END FOOTER DESIGN AREA -->
   </main>
+
+  
   <!-- END MAIN CONTENT -->
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    simulateTouch: true,
+    grabCursor: true,
+  });
+  </script>
+  
   <!-- JQUERY JS -->
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <!-- BOOTSTRAP JS -->

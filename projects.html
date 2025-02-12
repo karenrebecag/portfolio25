@@ -23,6 +23,10 @@
     <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="assets/fonts/remixicon.css" />
     <!-- MAGNIFIC CSS -->
+     
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- NICE SELECT CSS -->
     <link rel="stylesheet" href="assets/css/nice-select.min.css" />
@@ -78,47 +82,45 @@
         <div id="ball"></div>
     </div>
     <!-- / END MAGIC CURSOR AND BALL AREA-->
-    <!-- START MENU DESIGN AREA-->
-    <header class="main-header">
-        <div class="header-upper">
-            <div class="container">
-                <div class="header-inner">
-                    <div class="row align-items-center">
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
-                            <div class="logo-area">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-                                </div>
+  <!-- START MENU DESIGN AREA -->
+  <header class="main-header">
+    <div class="header-upper">
+        <div class="container">
+            <div class="header-inner">
+                <div class="row align-items-center">
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
+                        <div class="logo-area">
+                          <a href="#home">
+                            <div class="logo">
+                                <h4 style="color: black;">Karen Ortiz</h4>
                             </div>
+                          </a>
                         </div>
-                        <div class="col-xl-10 col-lg-10 col-md-6 col-6 col-sm-9">
-                            <div class="main-menu">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li><a href="index.html" class="linkstyle">Home</a></li>
-                                        <li><a href="about.html" class="linkstyle">about</a></li>
-                                        <li><a href="service.html" class="linkstyle">services</a></li>
-                                        <li class="has-dropdown"><a href="projects.html" class="linkstyle">projects</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="projects.html">Projects List</a></li>
-                                                <li><a href="single-project.html">Single Portfolio</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="blog.html" class="linkstyle">Blog</a></li>
-                                        <li><a href="contact.html" class="linkstyle">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="side-menu-icon d-lg-none text-end">
-                                <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fal fa-bars"></i></a>
-                            </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-6 col-6 col-sm-9">
+                        <div class="main-menu">
+                            <nav id="mobile-menu" aria-label="Main Navigation">
+                                <ul>
+                                    <li><a href="index.html" class="linkstyle">Home</a></li>
+                                    <li><a href="about.html" class="linkstyle">About</a></li>
+                                    <li><a href="#services" class="linkstyle">Services</a></li>
+                                    <li><a href="#portfolio" class="linkstyle">Portfolio</a></li>
+
+                                    <li><a href="#stories" class="linkstyle">Stories</a></li>
+                                    <li><a href="#contact" class="linkstyle">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="side-menu-icon d-lg-none text-end">
+                            <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fal fa-bars"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- // END MENU DESIGN AREA-->
+    </div>
+</header>
+<!-- END MENU DESIGN AREA -->
     <!-- START MOBILE MENU DESIGN AREA-->
     <div class="sidebar__area">
         <div class="sidebar__wrapper">
@@ -140,103 +142,441 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <h2>Projects</h2>
-                    <p>A Collection of My Latest Works and Achievements: Discover the Projects that Define My Passion and Skills</p>
+                    <p>
+                        From concept to execution, my projects embody a synergy of cutting-edge UI/UX design, full-stack development, and seamless integrations. Each solution is crafted with precision, ensuring high performance, scalability, and intuitive user experiences. Whether it’s building AI-driven interfaces, immersive web applications, or complex systems with secure authentication and automation, I leverage the latest technologies to create robust, efficient, and future-proof digital products. Explore my portfolio to see how I bring design, technology, and business needs together to craft impactful solutions.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <!-- // END SINGLE PAGE DESIGN AREA -->
-    <!-- START PORTFOLIO DESIGN AREA -->
-    <div class="projects-area" id="portfolio">
-        <div class="custom-icon">
-            <img src="assets/images/custom/work-scribble.svg" alt="custom">
-        </div>
-        <div class="container-fluid">
-            <div class="row g-4 portfolio-grid">
-                <!-- START SINGLE PORTFOLIO DESIGN AREA -->
-                <div class="col-md-6 col-xl-6 portfolio-item category-1">
-                    <a href="assets/images/projects/work1.jpg" class="work-popup">
-                        <div class="portfolio-box">
-                            <!-- Image -->
-                            <img src="assets/images/projects/work1.jpg" alt="" data-rjs="2">
-                            <!-- Category -->
-                            <span class="portfolio-category">Branding</span>
-                            <!-- Caption -->
-                            <div class="portfolio-caption">
-                                <h1>Glasses of Cocktail</h1>
+
+
+          <!-- Swiper Container -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="row blog-post-box align-items-center">
+                    <div class="col-md-6 col-xl-6 portfolio-item category-3">
+                        <a href="assets/images/blog/monex.png" class="work-popup">
+                            <div class="portfolio-box">
+                                <img src="assets/images/blog/monex.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                                <span class="portfolio-category">UX/UI Design</span>
+                                <div class="portfolio-caption">
+                                    <h1>Monex ONE App</h1>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div> 
+                  <div class="col-lg-6">
+                    <div class="blog-post-caption">
+                      <h3>Posted on Oct 26</h3>
+                      <h2>
+                        <a class="link-decoration" href="#">
+                            Revolutionizing Digital Banking: A Seamless Experience for Currency Exchange & Financial Empowerment                        </a>
+                      </h2>
+                      <a class="theme-btn theme-btn-two" href="#">Read more <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                  </div>
                 </div>
-                <!-- // END SINGLE PORTFOLIO DESIGN AREA -->
-                <!-- START SINGLE PORTFOLIO DESIGN AREA -->
-                <div class="col-md-6 col-xl-6 portfolio-item category-2">
-                    <a href="single-project.html">
-                        <div class="portfolio-box">
-                            <!-- Image -->
-                            <img src="assets/images/projects/work2.jpg" alt="" data-rjs="2">
-                            <!-- Category -->
-                            <span class="portfolio-category">Mockup</span>
-                            <!-- Caption -->
-                            <div class="portfolio-caption">
-                                <h1>A Branch with Flowers</h1>
+              </div>
+              <!-- End Slide 1 -->
+      
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="row blog-post-box align-items-center">
+                    <div class="col-md-6 col-xl-6 portfolio-item category-3">
+                        <a href="assets/images/blog/fintPay.png" class="work-popup">
+                            <div class="portfolio-box">
+                                <img src="assets/images/blog/fintPay.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                                <span class="portfolio-category">UX/UI Design</span>
+                                <div class="portfolio-caption">
+                                    <h1>FintPay App</h1>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div> 
+                  <div class="col-lg-6">
+                    <div class="blog-post-caption">
+                      <h3>Posted on Oct 26</h3>
+                      <h2>
+                        <a class="link-decoration" href="#">
+                            Transforming Banking: Secure, Smart, and Seamless Financial Management with FintPay                        </a>
+                      </h2>
+                      <a class="theme-btn theme-btn-two" href="#">Read more <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                  </div>
                 </div>
-                <!-- // END SINGLE PORTFOLIO DESIGN AREA -->
-                <!-- START SINGLE PORTFOLIO DESIGN AREA -->
-                <div class="col-md-6 col-xl-4 portfolio-item category-2">
-                    <a href="https://www.youtube.com/watch?v=qZEPs3vmYB4" class="popup-youtube">
-                        <div class="portfolio-box">
-                            <!-- Image -->
-                            <img src="assets/images/projects/work3.jpg" alt="" data-rjs="2">
-                            <!-- Category -->
-                            <span class="portfolio-category">Video</span>
-                            <!-- Caption -->
-                            <div class="portfolio-caption">
-                                <h1>Orange Rose Flower</h1>
+              </div>
+              <!-- End Slide 2 -->
+      
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="row blog-post-box align-items-center">
+                    <div class="col-md-6 col-xl-6 portfolio-item category-3">
+                        <a href="assets/images/blog/athenis.png" class="work-popup">
+                            <div class="portfolio-box">
+                                <img src="assets/images/blog/athenis.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                                <span class="portfolio-category">UX/UI Design</span>
+                                <div class="portfolio-caption">
+                                    <h1>Athenis AI</h1>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div> 
+                  <div class="col-lg-6">
+                    <div class="blog-post-caption">
+                      <h3>Posted on Oct 26</h3>
+                      <h2>
+                        <a class="link-decoration" href="#">
+                            Next-Gen E-Learning: Immersive 3D Simulations & AI-Powered Feedback for Smarter Learning                        </a>
+                      </h2>
+                      <a class="theme-btn theme-btn-two" href="#">Read more <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                  </div>
                 </div>
-                <!-- // END SINGLE PORTFOLIO DESIGN AREA -->
-                <!-- START SINGLE PORTFOLIO DESIGN AREA -->
-                <div class="col-md-6 col-xl-4 portfolio-item category-1">
-                    <a href="assets/images/projects/work4.jpg" class="work-popup">
-                        <div class="portfolio-box">
-                            <!-- Image -->
-                            <img src="assets/images/projects/work4.jpg" alt="" data-rjs="2">
-                            <!-- Category -->
-                            <span class="portfolio-category">Branding</span>
-                            <!-- Caption -->
-                            <div class="portfolio-caption">
-                                <h1>Green Plant on a Desk</h1>
+              </div>
+              <!-- End Slide 3 -->
+      
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="row blog-post-box align-items-center">
+                    <div class="col-md-6 col-xl-6 portfolio-item category-3">
+                        <a href="assets/images/blog/ancient.png" class="work-popup">
+                            <div class="portfolio-box">
+                                <img src="assets/images/blog/ancient.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                                <span class="portfolio-category">Artificial Intelligence Development</span>
+                                <div class="portfolio-caption">
+                                    <h1>Ancient Global</h1>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div> 
+                  <div class="col-lg-6">
+                    <div class="blog-post-caption">
+                      <h3>Posted on Oct 26</h3>
+                      <h2>
+                        <a class="link-decoration" href="#">
+                            AI-Driven Solutions: Seamless Middleware Integration for Dynamic Experiences in Webflow                        </a>
+                      </h2>
+                      <a class="theme-btn theme-btn-two" href="#">Read more <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                  </div>
                 </div>
-                <!-- // END SINGLE PORTFOLIO DESIGN AREA -->
-                <!-- START SINGLE PORTFOLIO DESIGN AREA -->
-                <div class="col-md-6 col-xl-4 portfolio-item category-2">
-                    <a href="assets/images/projects/work5.jpg" class="work-popup">
-                        <div class="portfolio-box">
-                            <!-- Image -->
-                            <img src="assets/images/projects/work5.jpg" alt="" data-rjs="2">
-                            <!-- Category -->
-                            <span class="portfolio-category">Mockup</span>
-                            <!-- Caption -->
-                            <div class="portfolio-caption">
-                                <h1>Orange Rose Flower</h1>
+              </div>
+              <!-- End Slide 4 -->
+      
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <div class="row blog-post-box align-items-center">
+                    <div class="col-md-6 col-xl-6 portfolio-item category-3">
+                        <a href="assets/images/blog/zachariel.png" class="work-popup">
+                            <div class="portfolio-box">
+                                <img src="assets/images/blog/zachariel.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                                <span class="portfolio-category">UI Design & Fullstack development</span>
+                                <div class="portfolio-caption">
+                                    <h1>Zachariel Banking</h1>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div> 
+                  <div class="col-lg-6">
+                    <div class="blog-post-caption">
+                      <h3>Posted on Oct 26</h3>
+                      <h2>
+                        <a class="link-decoration" href="#">
+                            Next-Gen Credit: A Seamless UI & Fullstack Experience with AI-Powered Verification                        </a>
+                      </h2>
+                      <a class="theme-btn theme-btn-two" href="#">Read more <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                  </div>
                 </div>
-                <!-- // END SINGLE PORTFOLIO DESIGN AREA -->
+              </div>
+              <!-- End Slide 5 -->
             </div>
+            
+    
+          </div>
+
+  <!-- START PORTFOLIO DESIGN AREA -->
+  <div class="projects-area" id="portfolio">
+
+    <div class="container-fluid">
+        <div class="row g-4 portfolio-grid">
+
+
+  
+            <!-- Portfolio Item 7 -->
+            <div class="col-md-4 col-xl-3 portfolio-item category-3">
+                <a href="assets/images/screens/cadence.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/screens/cadence.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">Shopify Development</span>
+                        <div class="portfolio-caption">
+                            <h1>Cadence OTP</h1>
+                        </div>
+                    </div>
+                </a>
+            </div> 
+
+            <!-- Portfolio Item 8 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-3">
+                <a href="assets/images/screens/spil.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/screens/spil.png" alt="Project 12 - Animation" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">UI Design</span>
+                        <div class="portfolio-caption">
+                            <h1>Spil Creative</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Portfolio Item 9 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-3">
+                <a href="assets/images/screens/pologrounds.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/screens/pologrounds.png" alt="Project 11 - Graphic Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">Graphic Design</span>
+                        <div class="portfolio-caption">
+                            <h1>PoloGrounds</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Portfolio Item 10 -->
+            <div class="col-md-4 col-xl-3 portfolio-item category-3">
+                <a href="assets/images/screens/healthade.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/screens/healthade.png" alt="Project 10 - App Development" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">Shopify Development</span>
+                        <div class="portfolio-caption">
+                            <h1>Health Ade</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Portfolio Item 11 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-3">
+                <a href="assets/images/screens/goslings.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/screens/goslings.png" alt="Project 9 - UI Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">UI Design</span>
+                        <div class="portfolio-caption">
+                            <h1>Goslings Rum Bermudas</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Portfolio Item 12 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-3">
+                <a href="assets/images/screens/everen.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/screens/everen.png" alt="Project 8 - Branding" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">UI Design</span>
+                        <div class="portfolio-caption">
+                            <h1>Everen Energy</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Portfolio Item 4 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="assets/images/projects/work4.jpg" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/blog/hypatia.png" alt="Hypatia Magazine - No-Code Development" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">No-Code Development</span>
+                        <div class="portfolio-caption">
+                            <h1>Hypatia Magazine</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Portfolio Item 13 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="https://www.youtube.com/watch?v=qZEPs3vmYB4" class="popup-youtube">
+                    <div class="portfolio-box">
+                        <img src="assets/images/screens/muciencias.png" alt="FintPay App - UX/UI Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">No Code Development</span>
+                        <div class="portfolio-caption">
+                            <h1>Muciencias</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Portfolio Item 14 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="assets/images/projects/work4.jpg" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/screens/cicospace.png" alt="Cicospace" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">Webflow Development</span>
+                        <div class="portfolio-caption">
+                            <h1>Cicospace</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Portfolio Item 15 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="https://www.youtube.com/watch?v=qZEPs3vmYB4" class="popup-youtube">
+                    <div class="portfolio-box">
+                        <img src="assets/images/blog/ancient.png" alt="Ancient Global - Artificial Intelligence" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">Artificial Intelligence</span>
+                        <div class="portfolio-caption">
+                            <h1>Ancient Global</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Portfolio Item 16 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="assets/images/blog/athenis.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/blog/athenis.png" alt="Athenis AI - UX/UI Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">UX/UI Design</span>
+                        <div class="portfolio-caption">
+                            <h1>Athenis AI</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Portfolio Item 17 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="assets/images/blog/athenis.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/blog/athenis.png" alt="Athenis AI - UX/UI Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">UX/UI Design</span>
+                        <div class="portfolio-caption">
+                            <h1>Athenis AI</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Portfolio Item 18 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="assets/images/blog/athenis.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/blog/athenis.png" alt="Athenis AI - UX/UI Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">UX/UI Design</span>
+                        <div class="portfolio-caption">
+                            <h1>Athenis AI</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Portfolio Item 19 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="assets/images/blog/athenis.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/blog/athenis.png" alt="Athenis AI - UX/UI Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">UX/UI Design</span>
+                        <div class="portfolio-caption">
+                            <h1>Athenis AI</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Portfolio Item 20 -->
+            <div class="col-md-3 col-xl-3 portfolio-item category-2">
+                <a href="assets/images/blog/athenis.png" class="work-popup">
+                    <div class="portfolio-box">
+                        <img src="assets/images/blog/athenis.png" alt="Athenis AI - UX/UI Design" data-rjs="2" loading="lazy">
+                        <span class="portfolio-category">UX/UI Design</span>
+                        <div class="portfolio-caption">
+                            <h1>Athenis AI</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+
         </div>
+
     </div>
-    <!-- // END PORTFOLIO DESIGN AREA -->
+</div>
+
+
+
+        
+      <!--
+      <section class="secondary-slider-section" style="margin: 50px 0;">
+        <div class="container">
+        <!-- Heading del slider -->
+        <h2 class="text-center mb-4">UI Design for Spil Creative</h2>
+        
+        <!-- Slider secundario usando clases por defecto -->
+        <div id="secondary-swiper" class="swiper-container">
+            <div class="swiper-wrapper">
+            <!-- Slide 1: Row con 3 imágenes -->
+            <div class="swiper-slide">
+                <div class="row g-3">
+
+                    <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                       <img class="designImg"  src="assets/images/screens/design1.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                    </div> 
+                                
+                    <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                        <img class="designImg" src="assets/images/screens/design2.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                     </div> 
+
+                     <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                        <img class="designImg" src="assets/images/screens/design3.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                     </div> 
+
+                </div>
+            </div>
+            <!-- Slide 2: Row con 3 imágenes -->
+            <div class="swiper-slide">
+                <div class="row g-3">
+                    <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                        <img class="designImg"  src="assets/images/screens/design4.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                     </div> 
+
+                     <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                        <img class="designImg" src="assets/images/screens/design5.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                     </div> 
+
+                     <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                        <img class="designImg" src="assets/images/screens/design6.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                     </div> 
+                </div>
+            </div>
+
+            <!-- Slide 3: Row con 3 imágenes -->
+            <div class="swiper-slide">
+                <div class="row g-3">
+                    <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                        <img class="designImg" src="assets/images/screens/design7.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                        </div> 
+
+                        <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                        <img class="designImg" src="assets/images/screens/design8.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                        </div> 
+
+                        <div class="col-md-4 col-xl-4 portfolio-item category-3">
+                        <img class="designImg" src="assets/images/screens/design9.png" alt="Project 7 - Web Design" data-rjs="2" loading="lazy">
+                        </div> 
+                </div>
+            </div>
+
+        </div>
+
+
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
     <!-- START FOOTER DESIGN AREA -->
     <footer class="main-footer">
         <div class="container">
@@ -259,6 +599,30 @@
         </div>
     </footer>
     <!-- / END FOOTER DESIGN AREA -->
+       <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      simulateTouch: true,
+      grabCursor: true,
+    });
+    </script>
+    
+  
+
     <!-- JQUERY JS -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- BOOTSTRAP JS-->

@@ -3547,3 +3547,7 @@ ul.blog_pagination li a:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.designImg{
+    border-radius: 10px;
+}
